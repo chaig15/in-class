@@ -2,47 +2,51 @@
 
 /* tag selector */
 h1 { 
-
+    color: red;
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
 } /* applied to <h1> */
 
 /* class selector */
 .design-name { 
-
+    font-size: 3em;
 } /* applied to elements with `class="design-name"` */
 
 /* id selector */
 #zen-intro { 
-
+    background-color: rgba(255, 0, 0, .2);
+    border: .5em dashed blue;
 } /* applied to the element with `id="zen-intro"` */
 
 /* group selector */
 .explanation .participation .benefits .requirements { 
-
+    font-family: 'Courier New', Courier, monospace';
 } /* applied to ANY .explanation OR .participation OR .benefits OR .requirements */
 
 /* combined selector */
 h3 .select { 
-
+    color: orange;
+    font-size: 2em;
 } /* applied to ONLY combination of <h3> AND .select */
 
 /* descendant selector */
 nav li { 
-
+    color: green;
+    list-style: lower-greek;
 } /* applied ONLY to <li> INSIDE of <nav>
 
 /* child selector */
-div ul { 
-
+div > ul { 
 } /* applied to <ul> DIRECTLY INSIDE of <div>
 
 /* Immediately following selector */
-header div { 
-
+header + div { 
+    background: rgba(0, 255, 0, 0.5);
 } /* applied to every element immediately after the first element */
 
 /* Preceded by selector */
-header div { 
-
+header ~ div { 
+    background: rgba(0, 0, 255, 0.25);
 } /* applied to every element immediately preceded by the first element */
 
 /* Attribute selector */
